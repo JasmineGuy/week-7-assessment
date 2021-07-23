@@ -36,6 +36,23 @@ function unique(string)
 // Pangram Sentence¶
 // A pangram is a sentence that contains all the letters of the English alphabet at least once, like “The quick brown fox jumps over the lazy dog.”Write a function to check a sentence to see if it is a pangram or not.
 
+let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+
+
+function pangram(str){
+  let string = str.replace(/\s/g, '')
+   var array= string.split('')
+  for (let i=0; i<array.length; i++ ){
+      if(alphabet.includes(array[i]){
+        alphabet.pop(array[i])
+      }
+  }
+}
+
+
+console.log(alphabet)
+pangram('howdy cowboy')
+
 
 
 //Runtime: 
