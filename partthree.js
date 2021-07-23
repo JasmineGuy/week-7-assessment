@@ -15,6 +15,7 @@ function addToZero(array){
 
 addToZero(numbers)
 //Runtime: O(n^2)
+// Space: O(n) 
 
 // Unique Characters
 // Write a function that takes in a single word, as a string. It should return True if that word contains only unique characters. Return False otherwise.
@@ -30,6 +31,7 @@ function unique(string)
     return true;
 }
 //Runtime: O(n^2)
+// Space: O(n) 
 
 // Pangram Sentence¶
 // A pangram is a sentence that contains all the letters of the English alphabet at least once, like “The quick brown fox jumps over the lazy dog.”Write a function to check a sentence to see if it is a pangram or not.
@@ -56,3 +58,4 @@ function longestWord(list){
 longestWord(words)
 
 //Runtime: O(n^2)
+// Space: O(n) 
