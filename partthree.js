@@ -1,7 +1,7 @@
 //Sum Zero
 // Write a function that takes in an array of numbers. The function should return True if any two numbers in list sum to 0, and false otherwise.
 
-let numbers = [-5, 1, -40, 20, 6, 8, 7 ]
+let numbers = [-5, 5 ]
 
 function addToZero(array){
     for (let i =0; i< array.length; i++){
@@ -13,23 +13,24 @@ function addToZero(array){
     } return false
 }
 
-addToZero(numbers)
+console.log('addzerofunction:', addToZero(numbers))
 //Runtime: O(n^2)
 // Space: O(n) 
 
 // Unique Characters
 // Write a function that takes in a single word, as a string. It should return True if that word contains only unique characters. Return False otherwise.
 
-function unique(string)
-{
+function unique(string){
     for(let i = 0; i < string.length; i++)
         for(let j = i + 1; j < string.length; j++)
-            if (string[i] == string[j])
+            if (string[i] == string[j]) {
                 return false;
  
   
-    return true;
+              }  return true;
 }
+
+console.log('unique string function:', unique('Moonday'))
 //Runtime: O(n^2)
 // Space: O(n) 
 
@@ -39,19 +40,19 @@ function unique(string)
 let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
 
 
-function pangram(str){
-  let string = str.replace(/\s/g, '')
-   var array= string.split('')
-  for (let i=0; i<array.length; i++ ){
-      if(alphabet.includes(array[i]){
-        alphabet.pop(array[i])
-      }
-  }
-}
+// function pangram(str){
+//   let string = str.replace(/\s/g, '')
+//    var array= string.split('')
+//   for (let i=0; i<array.length; i++ ){
+//       if(alphabet.includes(array[i]){
+//         alphabet.pop(array[i])
+//       }
+//   }
+// }
 
 
-console.log(alphabet)
-pangram('howdy cowboy')
+// console.log(alphabet)
+// pangram('howdy cowboy')
 
 
 
