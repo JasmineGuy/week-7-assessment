@@ -59,7 +59,7 @@ const isPangram = (str) => {
       return false
     }
 
-    let charMap = {
+    let alphabet = {
       "a": 0, 
       "b": 0, 
       "c": 0, 
@@ -88,13 +88,13 @@ const isPangram = (str) => {
       "z": 0,
     }
   
-    let strAsSplitArr = str.toLowerCase().split("")
-    for (let char of strAsSplitArr) {
-      charMap[char] = charMap[char] + 1 || 1
+    let newArr = str.toLowerCase().split("")
+    for (let char of newArr) {
+      alphabet[char] = alphabet[char] + 1 || 1
     }
   
-    for (let key in charMap) {
-      if (charMap[key] === 0) {
+    for (let key in alphabet) {
+      if (alphabet[key] === 0) {
         return false
       }
     } return true
@@ -103,7 +103,8 @@ const isPangram = (str) => {
   
   console.log('pangram test:', isPangram('the quick brown fox jumps over the lazy dog'))
 
-//Runtime: 
+//Runtime: O(n)
+
 
 // Longest Word¶
 // Write a function, find_longest_word, that takes a list of words and returns the length of the longest one.
